@@ -6,6 +6,7 @@ const clientAxios = (url, data, headers = {}, method) => {
         url,
         data,
         headers: {
+            'Content-Type': 'application/json',
             ...headers
         }
     });

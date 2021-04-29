@@ -36,7 +36,7 @@ function CropList({props}) {
                                 <td>{index+1}</td>
                                 <td>{crop.type}</td>
                                 <td>{crop.variation}</td>
-                                <td>{crop.numSeeds}</td>
+                                <td>{crop.num_seeds}</td>
                                 <td>{crop.supervisor}</td>
                             </tr>
                         )

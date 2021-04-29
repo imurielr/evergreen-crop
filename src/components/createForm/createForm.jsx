@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { postCrop } from '../../services/cropService';
 import './createForm.scss';
 
@@ -12,6 +12,8 @@ function CreateForm({availablePlots, ...otherProps}) {
     const [variation, setVariation] = useState();
     const [numSeeds, setNumSeeds] = useState();
     const [supervisor, setSupervisor] = useState();
+
+    const {history} = useHistory()
     
     const handlePlotChange = (event) => {
         setPlot(event.target.value);
@@ -39,24 +41,30 @@ function CreateForm({availablePlots, ...otherProps}) {
             event.preventDefault();
             event.stopPropagation();
         }
+        event.preventDefault();
         setValidated(true);
         postCrop({
-            plot: plot,
+            plot_id: parseInt(plot),
             type: type,
             variation: variation,
-            numSeeds: numSeeds,
+            num_seeds: parseInt(numSeeds),
             supervisor: supervisor
-        })
-
+        }).then(() => {
+            document.getElementById("form").reset();
+            window.open("/", "_self")
+        });
     }
 
+    console.log(type)
+
     return (
-        <Form className="createForm" noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form id="form" className="createForm" noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group controlId="createCropForm.plot">
                 <Form.Label>Plot</Form.Label>
                 <Form.Control as="select" onChange={handlePlotChange} required>
+                    <option value="" selected disabled hidden>Choose one...</option>
                     {availablePlots.map(plot => {
-                        return plot.available === "true" ?
+                        return plot.available ?
                             <option key={plot.state} value={plot.id}>{plot.state}</option>
                             : null
                     
