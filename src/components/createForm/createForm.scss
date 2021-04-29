@@ -1,0 +1,13 @@
+.createForm {
+    display: flex;
+    flex-direction: column;
+
+    .buttons {
+        align-self: center;
+        
+        .formButton {
+            margin-right: 5px;
+        }
+    }
+
+}

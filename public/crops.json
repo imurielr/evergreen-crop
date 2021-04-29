@@ -1,0 +1,56 @@
+[
+    {
+        "type": "Fruta",
+        "variation": "Manzana",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Hortaliza",
+        "variation": "Zanahoria",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Flores",
+        "variation": "Girasol",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Fruta",
+        "variation": "Manzana",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Hortaliza",
+        "variation": "Zanahoria",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Flores",
+        "variation": "Girasol",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Fruta",
+        "variation": "Manzana",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Hortaliza",
+        "variation": "Zanahoria",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    },
+    {
+        "type": "Flores",
+        "variation": "Girasol",
+        "numSeeds": "200",
+        "supervisor": "John Doe"
+    }
+]

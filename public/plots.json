@@ -1,0 +1,75 @@
+[
+    {
+        "id": "1",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "casa",
+        "available": "true",
+        "numWorkers": "5"
+    },
+    {
+        "id": "2",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "finca",
+        "available": "true",
+        "numWorkers": "5"
+    },
+    {
+        "id": "3",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "campo",
+        "available": "false",
+        "numWorkers": "5"
+    },
+    {
+        "id": "4",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "no se que mas poner",
+        "available": "true",
+        "numWorkers": "5"
+    },
+    {
+        "id": "5",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "ejemplo",
+        "available": "true",
+        "numWorkers": "5"
+    },
+    {
+        "id": "6",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "otra casa",
+        "available": "true",
+        "numWorkers": "5"
+    },
+    {
+        "id": "7",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "otra finca",
+        "available": "true",
+        "numWorkers": "5"
+    },
+    {
+        "id": "8",
+        "area": "200",
+        "lat": "17.234",
+        "lng": "23.3423",
+        "state": "este es el ultimo",
+        "available": "true",
+        "numWorkers": "5"
+    }
+    
+]
